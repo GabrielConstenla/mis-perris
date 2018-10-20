@@ -2,9 +2,11 @@
 
 {% block content %}
     <main>
-      <form id="formulario" onsubmit="validate()" action="#">
+      <form method="ADOPTANTE" id="formulario" onsubmit="validate()" action="#">
         <div class="contenedor_form">
 
+            {{ form.as_p }}
+            
           <label for="txtEmail">Correo electrónico</label>
           <input id="txtEmail" tabindex="4" type="email" required
           placeholder="Ingrese su correo aquí">
@@ -61,7 +63,7 @@
            </select>
            <br/>
 
-           <button tabindex="12">Guardar</button>
+           <button type='submit' tabindex="12">Guardar</button>
           </div>
         </form>
 
