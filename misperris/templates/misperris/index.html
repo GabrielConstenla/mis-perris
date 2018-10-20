@@ -1,58 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <title>Mis perris</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/logoPerris.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/carrusel.css">
-  </head>
+{% extends 'misperris/base.html' %}
 
-  <body>
-
-    <header>
-      <a href="index.html" tabindex="-1"><img id="logoPerris" src="img/logoPerris.png" alt="logo perris"/></a>
-      <h1>Mis perris</h1>
-
-      <ul>
-        <li> <a href="index.html" tabindex="1">Inicio</a> </li>
-        <li> <a href="galeria.html" tabindex="2">Galería</a> </li>
-        <li> <a href="adopta.html" tabindex="3">Adopta</a> </li>
-      </ul>
-
-    </header>
-
-    <nav>
-      <div class="slideshow-container">
-
-        <div class="mySlides fade">
-         <div class="numbertext">1 / 3</div>
-         <img id="familia1" src="img/familia4-400.jpg" sizes="50vw" alt="Familia 4"
-              srcset="img/familia4-400.jpg 400w, img/familia4-768.jpg 768w, img/familia4-1024.jpg 1024w">
-         <div class="text">"Una experiencia inolvidable la de adoptar a este perrito, le cambió la vida a mi bebé
-                            ahora está más feliz y aprendió a querer y no tener miedo a los animales"</div>
-        </div>
-
-        <div class="mySlides fade">
-         <div class="numbertext">2 / 3</div>
-         <img id="familia2" src="img/familia5-400.jpg" sizes="50vw" alt="Familia 2"
-              srcset="img/familia5-400.jpg 400w, img/familia5-768.jpg 768w, img/familia5-1024.jpg 1024w">
-         <div class="text">"Lo mejor que nos pudo haber pasado, toda la familia disfruta con su compañía,
-                            además es un buen guardían nivel 50 para mi hija"</div>
-        </div>
-
-        <div class="mySlides fade">
-         <div class="numbertext">3 / 3</div>
-         <img id="familia3" src="img/familia3-400.jpg" sizes="50vw" alt="Familia 3"
-              srcset="img/familia3-400.jpg 400w, img/familia3-400.jpg 768w, img/familia3-1024.jpg 1024w">
-         <div class="text">"Un gran perro para un gran corazón. A pesar de su apariencia,
-                            es muy tierno y cuida al bebé de la casa, un verdadero protector nivel 100"</div>
-        </div>
-
-      </div>
-    </nav>
-
+{% block content %}
     <main>
 
       <h1>Bienvenido a mis perris</h1>
@@ -70,7 +18,7 @@
         <p><b>Esterilización:</b> No importando si es hembra o macho usted está en la obligación de esterilizarlo antes de los 6 meses, y así evitar problemas de sobre población.</p>
 
       </div>
-      <img id="perromain" src="img/perromain2.0.png" alt="perrito con dedo arriba">
+      <img id="perromain" src="static/img/perromain2.0.png" alt="perrito feliz">
 
       <div class="columna2">
 
@@ -81,38 +29,6 @@
         <p>Por favor cuando reciba a su mascota llévelo a donde un veterinario a que le haga un chequeo general.</p>
 
       </div>
-      <img id="perritoadopta" src="img/adopta-300.jpg" alt="perrito adopta">
+      <img id="perritoadopta" src="static/img/adopta-300.jpg" alt="perrito adopta">
     </main>
-
-    <footer>
-      <table>
-        <tr>
-  					<td>Email</td>
-
-  					<td>
-  						<a tabindex="4" href="mailto:development@misperris.cl">
-  							development@misperris.cl
-  						</a>
-  					</td>
-  				</tr>
-
-  				<tr>
-  					<td>Teléfono</td>
-  					<td>
-  						<a tabindex="5" href="tel:+56930164774">
-  							+569 123 321 00
-  						</a>
-  					</td>
-  				</tr>
-
-  				<tr>
-  					<td colspan="2">
-  						&copy; Todos los derechos reservados
-  					</td>
-  				</tr>
-      </table>
-    </footer>
-    <script src="js/carrusel.js"></script>
-  </body>
-
-</html>
+{% endblock %}
