@@ -1,0 +1,44 @@
+.contenedorlogin{
+  height: 100%;
+  margin: auto;
+  border: 2px solid;
+  border-color: black;
+  border-radius: 10%;
+  background-color: rgb(206, 214, 214);
+  max-width: 370px;
+  padding: 50px 30px;
+  margin-top: 20px;
+  margin-bot: 20px;
+}
+
+#Username{
+
+}
+
+#Cusuario{
+  max-width: 100%;
+  text-align: left;
+  width: 70px;
+}
+
+#pass{
+
+}
+
+#Cpassword{
+  max-width: 100%;
+  text-align: left;
+  width: 70px;
+}
+
+#noCoincide{
+  color:red;
+}
+
+#btnLogin{
+    margin: auto;
+}
+
+#olvidarContraseña{
+  margin: auto;
+}

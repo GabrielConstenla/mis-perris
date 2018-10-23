@@ -16,7 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+#para inicio de sesion
+from django.contrib.auth import views
+from django.conf.urls import url
+
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url('accounts/login/$', views.login, name='login'),
+    url('accounts/logout/$', views.logout, name='logout', kwargs={'next_page': '/'}),
+    path('accounts/', include('django.contrib.auth.urls')),
     path('', include('misperris.urls')),
 ]

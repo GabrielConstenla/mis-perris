@@ -1,4 +1,5 @@
 {% extends 'misperris/base.html' %}
+{% load static %}
 
 {% block content %}
     <main>
@@ -18,7 +19,7 @@
         <p><b>Esterilización:</b> No importando si es hembra o macho usted está en la obligación de esterilizarlo antes de los 6 meses, y así evitar problemas de sobre población.</p>
 
       </div>
-      <img id="perromain" src="static/img/perromain2.0.png" alt="perrito feliz">
+      <img id="perromain" src="{% static 'img/perromain2.0.png' %}" alt="perrito feliz">
 
       <div class="columna2">
 
@@ -29,6 +30,6 @@
         <p>Por favor cuando reciba a su mascota llévelo a donde un veterinario a que le haga un chequeo general.</p>
 
       </div>
-      <img id="perritoadopta" src="static/img/adopta-300.jpg" alt="perrito adopta">
+      <img id="perritoadopta" src="{% static 'img/adopta-300.jpg' %}" alt="perrito adopta">
     </main>
 {% endblock %}
