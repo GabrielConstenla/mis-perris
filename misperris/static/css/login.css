@@ -1,0 +1,159 @@
+body{
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+	margin: 0;
+	box-sizing: border-box;
+  flex-flow: wrap;
+}
+
+header, nav, main, footer{
+	width: 100%;
+  max-width: 100%;
+}
+
+
+header{
+  background-image: linear-gradient( rgb(107, 163, 163), rgb(147, 192, 192) );
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav{
+  margin:0;
+  background-image: linear-gradient( rgb(147, 192, 192), rgb(188, 217, 217) );
+  width: 100%;
+
+}
+
+#logoPerris{
+  margin-top: 50px;
+}
+
+main{
+  background-image: linear-gradient( rgb(188, 217, 217), rgb(26, 100, 97) );
+  padding: 0;
+  margin: 0;
+}
+
+
+main h3{
+  text-align: center;
+}
+
+@media screen and (min-width:320px){
+
+  #id_username{
+    max-width: 100%;
+    width: 150px;
+  }
+
+  #id_password{
+    max-width: 100%;
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  #btnLogin{
+    margin: 10px 85px;
+    display:block;
+    width: 150px;
+    float: left;
+    margin-top:10px;
+  }
+
+  .contenedorlogin{
+    border: 2px solid;
+    margin: 20px 15px;
+    width: 70%;
+    max-width: 100%;
+    background-color: skyblue;
+    padding: 15px 30px;
+  }
+
+}
+
+@media screen and (min-width:768px){
+
+  #id_username{
+    max-width: 100%;
+    float: left;
+    width: 200px;
+    flex-flow: wrap;
+    display: block;
+
+
+  }
+
+  #id_password{
+    max-width: 100%;
+    text-align: left;
+    width: 200px;
+    margin-top: 10px;
+  }
+
+
+  #btnLogin{
+    margin: 10px 133px;
+    display:block;
+    width: 200px;
+    float: left;
+    margin-top: 10px;
+  }
+
+
+  .contenedorlogin{
+    border: 2px solid;
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    max-width: 100%;
+    background-color: skyblue;
+    padding: 20px 30px;
+  }
+
+}
+
+@media screen and (min-width:1024px){
+
+  #id_username{
+    max-width: 100%;
+    float: left;
+    width: 350px;
+    flex-flow: wrap;
+    display: block;
+  }
+
+  #id_password{
+    max-width: 100%;
+    text-align: left;
+    width: 350px;
+    margin-top: 20px;
+  }
+
+
+  #btnLogin{
+    margin: 10px 133px;
+    width: 350px;
+    float: left;
+    margin-top: 20px;
+  }
+
+
+  .contenedorlogin{
+    border: 2px solid;
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    max-width: 550px;
+    background-color: skyblue;
+    padding: 20px 20px;
+  }
+
+  #olvidarContraseña{
+  	width: 200px;
+  }
+
+}

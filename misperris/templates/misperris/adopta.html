@@ -1,0 +1,69 @@
+{% extends 'misperris/base.html' %}
+{% load static %}
+{% block content %}
+    <main>
+      <form id="formulario" onsubmit="validate()" action="#">
+        <div class="contenedor_form">
+
+          <label for="txtEmail">Correo electrónico</label>
+          <input id="txtEmail" tabindex="4" type="email" required
+          placeholder="Ingrese su correo aquí">
+          <br />
+
+          <label for="txtRun">Run:</label>
+          <input id="txtRun" tabindex="5" type="text" required
+          minlength="9" maxlength="10"
+          onkeypress="runValidator()" onkeyup="runValidator()"
+          placeholder="Ingrese su run aquí"/>
+          <span id="runValidator" style="color:red"></span>
+          <br />
+
+
+          <label for="txtName">Nombres y Apellidos:</label>
+          <input id="txtName" tabindex="6" type="text" required
+           maxlength="50" minlength="2"
+           placeholder="Ingrese su nombre completo"/>
+           <span id="nameValidator" style="color:red"></span>
+           <br/>
+
+           <label for="txtDate">Fecha de nacimiento:</label>
+           <input id="txtDate" tabindex="7" type="date" required
+           min="1960-12-31"  max="2000-12-31"/>
+
+           <br />
+
+           <label for="txtTel">Teléfono:</label>
+           <input id="txtTel" tabindex="8" type="text" required
+           minlength="9" maxlength="10"
+           onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+           placeholder="Ingrese su número telefónico"/>
+           <span id="telValidator" style="color:red"></span>
+           <br />
+
+           <label for="txtRegion">Región:</label>
+           <select id="txtRegion" tabindex="9" oninput="selectCity()">
+           </select>
+           <br />
+           <label for="txtCity">Ciudad</label>
+           <select id="txtCity" tabindex="10">
+
+           </select>
+
+
+           <br />
+
+           <label for="txtTipo">Tipo de Vivienda:</label>
+           <select id="txtTipo" tabindex="11">
+               <option >Casa con patio grande</option>
+               <option >Casa con patio pequeño</option>
+               <option >Casa sin patio</option>
+               <option >Departamento</option>
+           </select>
+           <br/>
+
+           <button tabindex="12">Guardar</button>
+          </div>
+        </form>
+
+    </main>
+{% endblock %}

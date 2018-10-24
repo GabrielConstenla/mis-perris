@@ -1,0 +1,54 @@
+{% extends 'misperris/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <main>
+
+      <h1>Galería a mis perris</h1>
+
+        <figure class="ferrito perros">
+          <img class="imgFerrito imagenes" src="{% static 'img/ferrito100.jpg' %}" sizes="50vw" alt="image ferrito dog"
+              srcset="{% static 'img/ferrito100.jpg' 320w %}, {% static 'img/ferrito200.jpg 768w' %}"/>
+              <hr>
+              <figcaption class=textogaleria> <b>Nombre:</b> Ferrito <br />
+                                              <b>Características:</b> El es un ferrito fuy feliz y fermoso. Le gustan las frofetas y la farne <br />
+                                              <b>Raza:</b> Fifuafua<br />
+                                              <b>Estado:</b> Disponible</figcaption>
+
+        </figure>
+
+        <figure class="perdo perros">
+          <img class="imgPerdo imagenes" src="{% static 'img/perdo100.jpg' %}" sizes="50vw" alt="image perdo dog"
+              srcset="{% static 'img/perdo100.jpg' 320w %}, {% static 'img/perdo200.jpg' 768w %}"/>
+              <hr>
+              <figcaption class=textogaleria><b>Nombre:</b> Perdo <br />
+                                             <b>Características:</b> Come mucho. Que su apariencia no te engañe, sigue siendo un perro.  <br />
+                                             <b>Raza:</b> Cerderro<br />
+                                             <b>Estado:</b> Disponible</figcaption></figcaption>
+
+        </figure>
+
+        <figure class="pedropablo perros">
+          <img class="imgPedropablo imagenes" src="{% static 'img/pedropablo100.jpg' %}" sizes="50vw" alt="image pedropablo dog"
+              srcset="{% static 'img/pedropablo100.jpg' 320w %}, {% static 'img/pedropablo200.jpg' 768w %}"/>
+              <hr>
+              <figcaption class=textogaleria><b>Nombre:</b> Pedro Pablo <br />
+                                             <b>Características:</b> No come si la comida no es marca royal canin. Sólo toma agua envasada. <br />
+                                             <b>Raza:</b> Poodle alemán<br />
+                                             <b>Estado:</b> Disponible</figcaption>
+        </figure>
+
+        <figure class="perturbadog perros">
+          <img class="imgPerturbadog imagenes" src="{% static 'img/perturbadog100.jpg' %}" sizes="50vw"  alt="image perturbadog"
+              srcset="{% static 'img/perturbadog100.jpg' 320w %}, {% static 'img/perturbadog200.jpg' 768w %}"/>
+              <hr>
+              <figcaption class=textogaleria><b>Nombre:</b> Perturbadog <br />
+                                             <b>Características:</b>Varias personas dicen que notan algo extraño en su cara. Qué será...<br />
+                                             <b>Raza:</b> Perturbarius Perritus <br />
+                                             <b>Estado:</b> Rescatado</figcaption>
+        </figure>
+
+    </main>
+
+{% endblock %}

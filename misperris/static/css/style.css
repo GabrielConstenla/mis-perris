@@ -1,0 +1,479 @@
+body{
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+	margin: 0;
+	box-sizing: border-box;
+  flex-flow: wrap;
+}
+
+header, nav, main, footer{
+	width: 100%;
+  max-width: 100%;
+}
+
+
+header{
+  background-image: linear-gradient( rgb(107, 163, 163), rgb(147, 192, 192) );
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav{
+  margin:0;
+  background-image: linear-gradient( rgb(147, 192, 192), rgb(188, 217, 217) );
+  width: 100%;
+
+}
+
+#logoPerris{
+  margin-top: 50px;
+}
+
+main{
+  background-image: linear-gradient( rgb(188, 217, 217), rgb(26, 100, 97) );
+  padding: 0;
+  margin: 0;
+}
+
+
+main h3{
+  text-align: center;
+}
+
+.columna1{
+  float: left;
+  width: 70%;
+  max-width: 100%;
+  display: block;
+  flex-flow: wrap;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+#perromain{
+  float:right;
+  width: 20%;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  max-height: 200px;
+  flex-flow: wrap;
+  box-sizing: border-box;
+}
+
+.columna2{
+  float: right;
+  width: 70%;
+  max-width: 100%;
+  display: block;
+  flex-flow: wrap;
+  box-sizing: border-box;
+}
+
+#perritoadopta{
+  float:left;
+  width: 20%;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  flex-flow: wrap;
+  box-sizing: border-box;
+}
+
+#formulario{
+  width: 500px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input, textarea, select, button, label{
+  width: 180px;
+  margin: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.contenedor_form{
+  border: 2px solid;
+  border-color: gray;
+  border-radius: 10%;
+  background-color: rgb(206, 214, 214);
+  max-width: 370px;
+  padding: 20px;
+}
+
+
+
+footer{
+	background-color: black;
+	color: white;
+  padding: 15px;
+  width: 100%;
+}
+
+footer a{
+	color: lightblue;
+}
+
+.perros{
+  width: 80%;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 4px 4px black;
+  border: solid 2px black;
+  text-align: center;
+  margin:auto;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.imagenes{
+  border-radius: 10%;
+  width: 100%;
+  flex-flow: wrap;
+  max-width: 400px;
+}
+
+.textogaleria{
+  padding-bottom: 10px;
+  margin-left: 15px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+@media screen and (min-width:320px){
+
+  #formulario{
+    width: 70%;
+  }
+
+  input, textarea, select, button, label{
+    width: 220px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .contenedor_form{
+    border: 2px solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color: azure;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  main{
+   width: 100%;
+  }
+
+  main h1{
+    text-align: center;
+    font-size: 28px;
+  }
+
+  #perromain{
+    display: none;
+  }
+
+  #perritoadopta{
+    display:none;
+  }
+
+  .columna1{
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .columna2{
+    width: 100%;
+    float: left;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .perros{
+    width: 70%;
+  	display: block;
+  	border-radius: 20px;
+  	box-shadow: 4px 4px black;
+  	border: solid 2px black;
+    text-align: center;
+    margin:auto;
+    max-width: 600px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .imagenes{
+    border-radius: 10%;
+    width: 70%;
+    flex-flow: wrap;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (min-width:768px){
+  input, textarea, select, button, label{
+    width: 400px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .contenedor_form{
+    border: 2px solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color: azure;
+    max-width: 600px;
+    padding: 40px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  #perros{
+    width: 80%;
+  	display: block;
+  	border-radius: 20px;
+  	box-shadow: 4px 4px black;
+  	border: solid 2px black;
+    text-align: center;
+    margin:auto;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+
+  #imagenes{
+    border-radius: 10%;
+    width: 100%;
+    flex-flow: wrap;
+    max-width: 400px;
+  }
+
+  .columna1{
+    float: left;
+    width: 70%;
+    max-width: 70%;
+    display: block;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    margin-left: 10px;
+  }
+
+  #perromain{
+    float:right;
+    width: 20%;
+    max-width: 20%;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    max-height: 190px;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    margin-right: 30px;
+  }
+
+  .columna2{
+    float: right;
+    width: 70%;
+    max-width: 70%;
+    display: block;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+
+  #perritoadopta{
+    float:left;
+    width: 25%;
+    max-width: 25%;
+    margin-left: 30px;
+    display: block;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    margin-top: 35px;
+
+  }
+
+  .perros{
+    width: 47%;
+  	display: inline-block;
+    position: relative;
+  	border-radius: 20px;
+  	box-shadow: 4px 4px black;
+  	border: solid 2px black;
+    text-align: center;
+    max-width: 600px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+
+  .imagenes{
+    border-radius: 10%;
+    width: 70%;
+    flex-flow: wrap;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (min-width:1024px){
+  input, textarea, select, button, label{
+    width: 500px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .contenedor_form{
+    border: 2px solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color: azure;
+    max-width: 700px;
+    padding: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .columna2{
+    float: right;
+    width: 70%;
+    max-width: 70%;
+    display: block;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    margin-top: 70px;
+  }
+
+  #perritoadopta{
+    float:left;
+    width: 25%;
+    max-width: 25%;
+    margin-left: 30px;
+    display: block;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    margin-top: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .perros{
+    width: 47%;
+  	display: inline-block;
+    position: relative;
+  	border-radius: 20px;
+  	box-shadow: 4px 4px black;
+  	border: solid 2px black;
+    text-align: center;
+    max-width: 600px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .imagenes{
+    border-radius: 10%;
+    width: 70%;
+    flex-flow: wrap;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+
+}
+
+
+@media screen and (min-width:1440px){
+  input, textarea, select, button, label{
+    width: 500px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .contenedor_form{
+    border: 2px solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color: azure;
+    max-width: 700px;
+    padding: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .columna2{
+    float: right;
+    width: 70%;
+    max-width: 70%;
+    display: block;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    margin-top: 70px;
+  }
+
+  #perritoadopta{
+    float:left;
+    width: 25%;
+    max-width: 25%;
+    margin-left: 30px;
+    display: block;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    margin-top: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .perros{
+    width: 47%;
+  	display: inline-block;
+    position: relative;
+  	border-radius: 20px;
+  	box-shadow: 4px 4px black;
+  	border: solid 2px black;
+    text-align: center;
+    max-width: 600px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+  }
+
+  .imagenes{
+    border-radius: 10%;
+    width: 70%;
+    flex-flow: wrap;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+
+}

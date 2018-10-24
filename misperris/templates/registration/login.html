@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <title>Mis perris</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{% static 'img/logoPerris.png' %}">
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+  <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+
+</head>
+
+<body>
+
+  <header>
+    <a href="{% url 'index' %}" tabindex="-1"><img id="logoPerris" src="{% static 'img/logoPerris.png' %}" alt="logo perris"/></a>
+    <h1>Mis perris</h1>
+
+    {% if user.is_authenticated %}
+      <p> Hola! {{ user.username }}. Gracias por iniciar sesión. <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
+    {% endif %}
+
+    <ul>
+      <li> <a href="{% url 'index' %}" tabindex="1">Inicio</a> </li>
+      <li> <a href="{% url 'galeria' %}" tabindex="2">Galería</a> </li>
+      <li> <a href="{% url 'adopta' %}" tabindex="3">Adopta</a> </li>
+    </ul>
+
+  </header>
+
+  <div class="contenedorlogin">
+    <form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+        <table>
+        <tr>
+            <td id= username>{{ form.username.label_tag }}</td>
+            <td id="Cusuario">{{ form.username }}</td>
+        </tr>
+        <tr>
+            <td id= pass>{{ form.password.label_tag }}</td>
+            <td id= "Cpassword">{{ form.password }}</td>
+        </tr>
+        </table>
+
+        <input id="btnLogin" type="submit" value="Login" />
+        <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+
+    <p id="olvidarContraseña"><a href="{% url 'password_reset' %}">¿Olvidaste tu contraseña?</a></p>
+    <p id="crearUsuario"> <a href="{% url 'signup' %}"> ¿Eres un usuario nuevo? Registrate!</p>
+  </div>
+
+  <!-- <footer>
+    <table>
+      <tr>
+          <td>Email</td>
+
+          <td>
+            <a tabindex="4" href="mailto:development@misperris.cl">
+              development@misperris.cl
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Teléfono</td>
+          <td>
+            <a tabindex="5" href="tel:+56930164774">
+              +569 123 321 00
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            &copy; Todos los derechos reservados
+          </td>
+        </tr>
+    </table>
+  </footer> -->
+
+</body>
+</html>
