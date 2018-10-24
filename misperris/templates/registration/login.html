@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="{% static 'img/logoPerris.png' %}">
   <link rel="stylesheet" href="{% static 'css/login.css' %}">
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <link rel="stylesheet" href="{% static 'css/menu.css' %}">
 
 </head>
@@ -48,9 +47,10 @@
     </form>
 
     <p id="olvidarContraseña"><a href="{% url 'password_reset' %}">¿Olvidaste tu contraseña?</a></p>
+    <p id="crearUsuario"> <a href="{% url 'signup' %}"> ¿Eres un usuario nuevo? Registrate!</p>
   </div>
 
-  <footer>
+  <!-- <footer>
     <table>
       <tr>
           <td>Email</td>
@@ -77,7 +77,7 @@
           </td>
         </tr>
     </table>
-  </footer>
+  </footer> -->
 
 </body>
 </html>

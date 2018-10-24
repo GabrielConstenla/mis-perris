@@ -407,3 +407,73 @@ footer a{
 
 
 }
+
+
+@media screen and (min-width:1440px){
+  input, textarea, select, button, label{
+    width: 500px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .contenedor_form{
+    border: 2px solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color: azure;
+    max-width: 700px;
+    padding: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .columna2{
+    float: right;
+    width: 70%;
+    max-width: 70%;
+    display: block;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    margin-top: 70px;
+  }
+
+  #perritoadopta{
+    float:left;
+    width: 25%;
+    max-width: 25%;
+    margin-left: 30px;
+    display: block;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    margin-top: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .perros{
+    width: 47%;
+  	display: inline-block;
+    position: relative;
+  	border-radius: 20px;
+  	box-shadow: 4px 4px black;
+  	border: solid 2px black;
+    text-align: center;
+    max-width: 600px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+  }
+
+  .imagenes{
+    border-radius: 10%;
+    width: 70%;
+    flex-flow: wrap;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+
+}

@@ -25,6 +25,7 @@ SECRET_KEY = '^j1r=^zhuilt5&-ursh=2@bq%2--5o63_%ybqky0ad!+15$9c!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = ['127.0.0.1', ' .pythonanywhere.com', 'gabrielconstenla.pythonanywhere.com']
 
 
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'misperris',
+    'accounts.apps.AccountsConfig',
 
 ]
 
@@ -54,6 +56,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'mysite.urls'
 
 LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 TEMPLATES = [
     {
@@ -123,3 +126,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'gabrielconstenlaperris@gmail.com'
+EMAIL_HOST_PASSWORD = 'gabrielperris'
+EMAIL_PORT = 587

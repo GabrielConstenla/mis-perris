@@ -17,7 +17,7 @@ class Adoptante(models.Model):
 
 class Adoptado(models.Model):
 	idPerro = models.AutoField(primary_key=True)
-	fotografia = models.TextField()
+	fotografia = models.ImageField()
 	nombre = models.CharField(max_length=50)
 	raza = models.CharField(max_length=30)
 	descripcion = models.TextField()
