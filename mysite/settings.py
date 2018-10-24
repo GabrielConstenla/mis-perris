@@ -132,3 +132,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'gabrielconstenlaperris@gmail.com'
 EMAIL_HOST_PASSWORD = 'gabrielperris'
 EMAIL_PORT = 587
+
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
