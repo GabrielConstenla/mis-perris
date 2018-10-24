@@ -4,14 +4,14 @@ from django.utils import timezone
 # Create your models here.
 
 class Adoptante(models.Model):
-	correo = models.CharField(max_length=200)
+	correo = models.EmailField()
 	run = models.CharField(max_length=10, primary_key=True)
 	nombreCompleto = models.CharField(max_length=100)
-	fechaNacimiento = models.DateField()
+	#fechaNacimiento = models.DateField()
 	telefono = models.IntegerField()
-	region = models.CharField(max_length=100)
-	ciudad = models.CharField(max_length=100)
-	vivienda = models.CharField(max_length=100)
+	#region = models.CharField(max_length=100)
+	#ciudad = models.CharField(max_length=100)
+	#vivienda = models.CharField(max_length=100)
 	def __str__(self):
 		return self.correo
 
