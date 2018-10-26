@@ -12,8 +12,6 @@ ESTADO = (
         ('DISPONIBLE','DISPONIBLE'),
     )
 
-<<<<<<< HEAD
-=======
 REGIONES = (
         ('I de Tarapacá','I de Tarapacá'),
         ('II de Antofagasta', 'II de Antofagasta'),
@@ -406,14 +404,12 @@ TIPOVIVIENDA = (
     )
 
 
->>>>>>> origin/featured_formulario2
 class Adoptante(models.Model):
 	correo = models.EmailField()
 	run = models.CharField(max_length=10, primary_key=True)#validators=[run_validation])
 	nombreCompleto = models.CharField(max_length=100)
 	telefono = models.CharField(max_length=9)
 	region = models.CharField(max_length=100, choices=REGIONES)
-	ciudad = models.CharField(max_length=100, choices=CIUDAD)
 	vivienda = models.CharField(max_length=100, choices=TIPOVIVIENDA)
 	def __str__(self):
 		return self.correo
@@ -427,5 +423,3 @@ class Adoptado(models.Model):
 	estado = models.CharField(max_length=10, choices=ESTADO)
 	def __str__(self):
 		return self.nombre
-
-

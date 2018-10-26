@@ -8,7 +8,7 @@ class AdoptanteForm(forms.ModelForm):
 
     class Meta:
         model = Adoptante
-        fields = ('correo', 'run', 'nombreCompleto', 'telefono','region','ciudad','vivienda')
+        fields = ('correo', 'run', 'nombreCompleto', 'telefono','region','vivienda')
 
     def clean_correo(self):
         correo = self.cleaned_data['correo']
@@ -38,10 +38,8 @@ class AdoptanteForm(forms.ModelForm):
             raise ValidationError("Ingresa un telefono con un 9 digitos")
         return telefono
 
-    # def clean_ciudades(self):
-    #     region=self.cleaned_data['region']
-    #     ciudad = self.cleaned_data['ciudad']
-    #     if region == "I de Tarapacá":
-    #         ciudad == "Arica"#, "Camarones", "Putre", "General Lagos"
-    #     return ciudad
-  
+    def clean_nombreCompleto(self):
+        nombreCompleto = self.cleaned_data['nombreCompleto']
+        if len(nombreCompleto.split(' ')) < 4 :
+            raise ValidationError("Por favor ingresa tu nombre completo")
+        return nombreCompleto
