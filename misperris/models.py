@@ -3,6 +3,12 @@ from django.utils import timezone
 
 # Create your models here.
 
+ESTADO = (
+        ('ADOPTADO','ADOPTADO'),
+        ('RESCATADO', 'RESCATADO'),
+        ('DISPONIBLE','DISPONIBLE'),
+    )
+
 class Adoptante(models.Model):
 	correo = models.CharField(max_length=200)
 	run = models.CharField(max_length=10, primary_key=True)
@@ -21,6 +27,6 @@ class Adoptado(models.Model):
 	nombre = models.CharField(max_length=50)
 	raza = models.CharField(max_length=30)
 	descripcion = models.TextField()
-	estado = models.CharField(max_length=10)
+	estado = models.CharField(max_length=10, choices=ESTADO)
 	def __str__(self):
 		return self.nombre
