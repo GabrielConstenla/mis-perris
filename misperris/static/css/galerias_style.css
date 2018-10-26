@@ -80,7 +80,7 @@
 
   .contenedor_galeria{
    width: 80%;
-   display:block;
+   display: inline-block;
    border-radius: 20px;
    box-shadow: 4px 4px black;
    border: solid 2px black;
