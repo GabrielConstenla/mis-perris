@@ -1,0 +1,30 @@
+{% extends 'misperris/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+  <main>
+
+    <div class="filtros">
+      <a href="{% url 'perritos_disponibles' %}">Perritos Disponibles</a>
+      <a href="{% url 'perritos_adoptados' %}">Perritos Adoptados</a>
+      <a href="{% url 'perritos_rescatados' %}">Perritos Rescatados</a>
+    </div>
+
+    <h2>Perritos Adoptados</h2>
+    <hr>
+    {% for adoptado in pAdoptados %}
+        <div class="contenedor_galeria">
+            <h3>{{ adoptado.nombre }}</h3>
+            <p><img class="imagenes" src="/media/{{ adoptado.fotografia }}"></p>
+            <div class="textogaleria">
+              <p><b>Raza: </b>{{ adoptado.raza }}</p>
+              <p><b>Descripcion: </b>{{ adoptado.descripcion|linebreaksbr }}</p>
+              <p><b>Estado: </b>{{ adoptado.estado }}</p>
+            </div>
+        </div>
+    {% endfor %}
+  </main>
+
+{% endblock %}

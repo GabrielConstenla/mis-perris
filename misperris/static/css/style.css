@@ -14,18 +14,19 @@ header, nav, main, footer{
 
 
 header{
-  background-image: linear-gradient( rgb(107, 163, 163), rgb(147, 192, 192) );
+  /* background-image: linear-gradient( rgb(107, 163, 163), rgb(147, 192, 192) ); */
   text-align: center;
   margin: 0;
   padding: 0;
+  background-color: #9df3c4;
 }
 
 
 nav{
   margin:0;
-  background-image: linear-gradient( rgb(147, 192, 192), rgb(188, 217, 217) );
+  /* background-image: linear-gradient( rgb(147, 192, 192), rgb(188, 217, 217) ); */
   width: 100%;
-
+  background-color: #9df3c4;
 }
 
 #logoPerris{
@@ -33,9 +34,10 @@ nav{
 }
 
 main{
-  background-image: linear-gradient( rgb(188, 217, 217), rgb(26, 100, 97) );
+  /* background-image: linear-gradient( rgb(188, 217, 217), rgb(26, 100, 97) ); */
   padding: 0;
   margin: 0;
+  background-color: #9df3c4;
 }
 
 
@@ -106,7 +108,7 @@ input, textarea, select, button, label{
   border: 2px solid;
   border-color: gray;
   border-radius: 10%;
-  background-color: rgb(206, 214, 214);
+  background-color: #d7fbe8;
   max-width: 370px;
   padding: 20px;
 }
@@ -169,7 +171,7 @@ footer a{
     border: 2px solid;
     border-color: black;
     border-radius: 30px;
-    background-color: azure;
+    background-color: #d7fbe8;
     width: 100%;
     max-width: 100%;
     padding: 20px;
@@ -244,7 +246,7 @@ footer a{
     border: 2px solid;
     border-color: black;
     border-radius: 30px;
-    background-color: azure;
+    background-color: #d7fbe8;
     max-width: 600px;
     padding: 40px;
     margin: 0 auto;
@@ -353,7 +355,7 @@ footer a{
     border: 2px solid;
     border-color: black;
     border-radius: 30px;
-    background-color: azure;
+    background-color: #d7fbe8;
     max-width: 700px;
     padding: 30px;
     margin: 0 auto;
@@ -423,7 +425,7 @@ footer a{
     border: 2px solid;
     border-color: black;
     border-radius: 30px;
-    background-color: azure;
+    background-color: #d7fbe8;
     max-width: 700px;
     padding: 30px;
     margin: 0 auto;

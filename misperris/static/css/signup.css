@@ -2,28 +2,28 @@ body{
   width: 100%;
   display: flex;
   max-width: 100%;
-  margin: 0;
-  box-sizing: border-box;
+	margin: 0;
+	box-sizing: border-box;
   flex-flow: wrap;
 }
 
-header, nav, main, footer{
+header, nav, main,{
 	width: 100%;
   max-width: 100%;
 }
 
 
 header{
-  background-image: linear-gradient( rgb(107, 163, 163), rgb(147, 192, 192) );
   text-align: center;
   margin: 0;
   padding: 0;
+  background-color: #9df3c4;
 }
 
 
 nav{
   margin:0;
-  background-image: linear-gradient( rgb(147, 192, 192), rgb(188, 217, 217) );
+  background-color: #9df3c4;
   width: 100%;
 
 }
@@ -33,9 +33,10 @@ nav{
 }
 
 main{
-  background-image: linear-gradient( rgb(188, 217, 217), rgb(26, 100, 97) );
+  background-color: #9df3c4;
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 
@@ -49,7 +50,7 @@ main h3{
     margin: 20px 15px;
     width: 70%;
     max-width: 100%;
-    background-color: skyblue;
+    background-color: #d7fbe8;
     padding: 15px 30px;
     padding-bottom: 15px;
   }
@@ -75,7 +76,7 @@ main h3{
     margin-top: 20px;
     width: 50%;
     max-width: 100%;
-    background-color: skyblue;
+    background-color: #d7fbe8;
     padding: 20px 30px;
     padding-bottom: 15px;
   }
@@ -102,7 +103,7 @@ main h3{
     margin-top: 20px;
     width: 50%;
     max-width: 550px;
-    background-color: skyblue;
+    background-color: #d7fbe8;
     padding: 30px 20px;
     padding-bottom: 15px;
   }

@@ -28,56 +28,29 @@
 
   </header>
 
-  <div class="contenedorlogin">
-    <form method="post" action="{% url 'login' %}">
-    {% csrf_token %}
-        <table>
-        <tr>
-            <td id= username>{{ form.username.label_tag }}</td>
-            <td id="Cusuario">{{ form.username }}</td>
-        </tr>
-        <tr>
-            <td id= pass>{{ form.password.label_tag }}</td>
-            <td id= "Cpassword">{{ form.password }}</td>
-        </tr>
-        </table>
+  <main>
+    <div class="contenedorlogin">
+      <form method="post" action="{% url 'login' %}">
+      {% csrf_token %}
+          <table>
+          <tr>
+              <td id= username>{{ form.username.label_tag }}</td>
+              <td id="Cusuario">{{ form.username }}</td>
+          </tr>
+          <tr>
+              <td id= pass>{{ form.password.label_tag }}</td>
+              <td id= "Cpassword">{{ form.password }}</td>
+          </tr>
+          </table>
 
-        <input id="btnLogin" type="submit" value="Login" />
-        <input type="hidden" name="next" value="{{ next }}" />
-    </form>
+          <input id="btnLogin" type="submit" value="Login" />
+          <input type="hidden" name="next" value="{{ next }}" />
+      </form>
 
-    <p id="olvidarContraseña"><a href="{% url 'password_reset' %}">¿Olvidaste tu contraseña?</a></p>
-    <p id="crearUsuario"> <a href="{% url 'signup' %}"> ¿Eres un usuario nuevo? Registrate!</p>
-  </div>
-
-  <!-- <footer>
-    <table>
-      <tr>
-          <td>Email</td>
-
-          <td>
-            <a tabindex="4" href="mailto:development@misperris.cl">
-              development@misperris.cl
-            </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Teléfono</td>
-          <td>
-            <a tabindex="5" href="tel:+56930164774">
-              +569 123 321 00
-            </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td colspan="2">
-            &copy; Todos los derechos reservados
-          </td>
-        </tr>
-    </table>
-  </footer> -->
+      <p id="olvidarContraseña"><a href="{% url 'password_reset' %}">¿Olvidaste tu contraseña?</a></p>
+      <p id="crearUsuario"> <a href="{% url 'signup' %}"> ¿Eres un usuario nuevo? Registrate!</p>
+    </div>
+  </main>
 
 </body>
 </html>
