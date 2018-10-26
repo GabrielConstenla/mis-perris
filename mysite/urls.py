@@ -21,10 +21,13 @@ from django.contrib.auth import views
 from django.conf.urls import url
 from django.contrib.auth import views as auth_views
 
+<<<<<<< HEAD
 #para fotos
 from django.conf import settings
 from django.conf.urls.static import static
 
+=======
+>>>>>>> origin
 urlpatterns = [
     path('admin/', admin.site.urls),
     url('accounts/login/$', views.login, name='login'),
