@@ -1,5 +1,5 @@
 from django import forms
-from .models import Adoptante
+from .models import Adoptante, Adoptado
 from django.core.exceptions import ValidationError
 
 
@@ -43,3 +43,9 @@ class AdoptanteForm(forms.ModelForm):
         if len(nombreCompleto.split(' ')) < 4 :
             raise ValidationError("Por favor ingresa tu nombre completo")
         return nombreCompleto
+
+class AdoptadoForm(forms.ModelForm):
+
+    class Meta:
+        model = Adoptado
+        fields = ('id','nombre', 'estado')

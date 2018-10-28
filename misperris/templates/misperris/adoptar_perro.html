@@ -1,0 +1,19 @@
+{% extends 'misperris/base.html' %}
+{% load static %}
+{% block content %}
+    <main>
+      <form method="POST" id="formulario" onsubmit="validate()" action="#">{% csrf_token %}
+        <div class="contenedor_form">
+
+            
+
+            <p><img class="imagenes" src="/media/{{ adoptado.fotografia }}"></p>
+
+            {{ form.as_p }}
+
+           <button type="submit" tabindex="12" >Adoptar</button>
+          </div>
+        </form>
+
+    </main>
+{% endblock %}

@@ -10,4 +10,6 @@ urlpatterns = [
     path('perritos_disponibles/', views.perritos_disponibles, name='perritos_disponibles'),
     path('perritos_adoptados/', views.perritos_adoptados, name='perritos_adoptados'),
     path('perritos_rescatados/', views.perritos_rescatados, name='perritos_rescatados'),
+    path('detalle_perro/<int:pk>/', views.detalle_perro, name='detalle_perro'),
+    path('detalle_perro/<int:pk>/adoptar', views.adoptar_perro, name='adoptar_perro'),
 ]

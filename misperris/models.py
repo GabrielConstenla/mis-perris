@@ -415,7 +415,6 @@ class Adoptante(models.Model):
 		return self.correo
 
 class Adoptado(models.Model):
-	idPerro = models.AutoField(primary_key=True)
 	fotografia = models.ImageField()
 	nombre = models.CharField(max_length=50)
 	raza = models.CharField(max_length=30)

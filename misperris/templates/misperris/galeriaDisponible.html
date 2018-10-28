@@ -15,7 +15,7 @@
     <hr>
     {% for adoptado in pDisponibles %}
         <div class="contenedor_galeria">
-            <h3>{{ adoptado.nombre }}</h3>
+            <h3><a href="{% url 'detalle_perro' pk=adoptado.pk %}">{{ adoptado.nombre }}</a></h3>
             <p><img class="imagenes" src="/media/{{ adoptado.fotografia }}"></p>
             <div class="textogaleria">
               <p><b>Raza: </b>{{ adoptado.raza }}</p>
