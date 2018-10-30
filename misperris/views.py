@@ -58,6 +58,7 @@ def perritos_adoptados(request):
     pAdoptados = Adoptado.objects.filter(estado__contains='Adoptado')
     return render(request, 'misperris/galeriaAdoptado.html', {'pAdoptados': pAdoptados})
 
+@login_required
 def detalle_perro(request, pk):
     adoptado = get_object_or_404(Adoptado, pk=pk)
     return render(request, 'misperris/detalle_perro.html',{'adoptado': adoptado})
@@ -73,4 +74,4 @@ def adoptar_perro(request, pk):
             return redirect('galeria')
     else:
         form = AdoptadoForm(instance=adoptado)
-    return render(request, 'misperris/adoptar_perro.html', {'form': form})
+    return render(request, 'misperris/adoptar_perro.html', {'form': form, 'adoptado': adoptado})

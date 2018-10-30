@@ -48,4 +48,4 @@ class AdoptadoForm(forms.ModelForm):
 
     class Meta:
         model = Adoptado
-        fields = ('id','nombre', 'estado')
+        fields = ('id', 'estado')

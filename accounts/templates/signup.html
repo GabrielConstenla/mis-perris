@@ -10,9 +10,16 @@
   </head>
 
   <body>
+
     <header>
       <a href="{% url 'index' %}" tabindex="-1"><img id="logoPerris" src="{% static 'img/logoPerris.png' %}" alt="logo perris"/></a>
       <h1>Mis perris</h1>
+      <ul>
+        <li> <a href="{% url 'index' %}" tabindex="1">Inicio</a> </li>
+        <li> <a href="{% url 'galeria' %}" tabindex="2">Galería</a> </li>
+        <li> <a href="{% url 'adopta' %}" tabindex="3">Adopta</a> </li>
+      </ul>
+
     </header>
 
     <main>
@@ -25,6 +32,35 @@
         </form>
       </div>
     </main>
+
+    <footer>
+      <table>
+        <tr>
+            <td>Email</td>
+
+            <td>
+              <a tabindex="4" href="mailto:development@misperris.cl">
+                development@misperris.cl
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Teléfono</td>
+            <td>
+              <a tabindex="5" href="tel:+56930164774">
+                +569 123 321 00
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              &copy; Todos los derechos reservados
+            </td>
+          </tr>
+      </table>
+    </footer>
 
   </body>
 </html>

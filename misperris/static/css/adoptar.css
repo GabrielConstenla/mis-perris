@@ -1,0 +1,149 @@
+@media screen and (min-width:320px){
+
+  /* h2{
+    text-align: center;
+  }
+
+  hr{
+    margin-top:20px;
+  } */
+
+  .contenedor_detalle{
+   width: 80%;
+   display:block;
+   border-radius: 20px;
+   box-shadow: 4px 4px black;
+   border: solid 2px black;
+   text-align: center;
+   margin:auto;
+   max-width: 400px;
+   margin-bottom: 20px;
+   margin-top: 50px;
+   background-color: #d7fbe8;
+  }
+
+  .imagenesdetalle{
+   border-radius: 10%;
+   width: 100%;
+   flex-flow: wrap;
+   width: 200px;
+   height: 200px;
+   max-width: 200px;
+   max-height: 200px;
+  }
+
+  .filtrosdetalle{
+   position: relative;
+   width:100%;
+  }
+
+  /* main a{
+   text-decoration: none;
+   display: inline-block;
+   font-size: 18px;
+   float: center;
+   padding: 14px 16px;
+   color: white;
+   border-bottom: 1px solid;
+   border-color: white;
+   background-color: #1fab89;
+   width: 100%;
+   text-align: center;
+  }
+
+  main a:hover, a:active, a:focus{
+   background-color: white;
+   box-shadow: 0px 0px 10px 3px black;
+   transform: translateY(3px);
+   transition-duration: 0.5s;
+   color: black;
+  }
+
+  main a:last-child{
+   border: none;
+  } */
+
+  .textogaleriadetalle{
+   font-size: 16px;
+  }
+
+  .btnAdoptar{
+    margin:auto;
+    margin-bottom: 10px;
+  }
+
+@media screen and (min-width:768px){
+
+  /* h2{
+    text-align: center;
+  }
+
+  hr{
+    margin-top:20px;
+  } */
+
+  .contenedor_detalle{
+   width: 80%;
+   display: inline-block;
+   border-radius: 20px;
+   box-shadow: 4px 4px black;
+   border: solid 2px black;
+   text-align: center;
+   margin:auto;
+   max-width: 400px;
+   margin-bottom: 20px;
+   margin-top: 50px;
+   background-color: #d7fbe8;
+   margin-left: 35px;
+  }
+
+  .imagenesdetalle{
+   border-radius: 10%;
+   width: 100%;
+   flex-flow: wrap;
+   width: 200px;
+   height: 200px;
+   max-width: 200px;
+   max-height: 200px;
+  }
+
+  .filtrosdetalle{
+   width: 80%;
+   margin: auto;
+  }
+
+  /* main a{
+   text-decoration: none;
+   display: inline-block;
+   font-size: 18px;
+   padding: 14px 16px;
+   color: white;
+   border: 2px solid;
+   border-color: white;
+   background-color: #1fab89;
+   text-align: center;
+   width: 32%;
+  }
+
+  main a:hover, a:active, a:focus{
+   background-color: white;
+   box-shadow: 0px 0px 10px 3px black;
+   transform: translateY(3px);
+   transition-duration: 0.5s;
+   color:black;
+  }
+
+  main a:last-child{
+   border: 2px solid;
+   border-color: white;
+  } */
+
+  .textogaleriadetalle{
+   font-size: 16px;
+  }
+
+  .btnAdoptar{
+    margin:auto;
+    margin-bottom: 10px;
+  }
+}
