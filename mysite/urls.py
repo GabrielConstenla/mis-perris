@@ -27,8 +27,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url('accounts/login/$', views.login, name='login'),
-    url('accounts/logout/$', views.logout, name='logout', kwargs={'next_page': '/'}),
+    url('accounts/login/$', views.LoginView.as_view(), name='login'),
+    url('accounts/logout/$', views.LogoutView.as_view(), name='logout', kwargs={'next_page': '/'}),
     path('accounts/', include('accounts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('', include('misperris.urls')),
